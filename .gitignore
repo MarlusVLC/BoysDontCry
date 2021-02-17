@@ -58,3 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+#MARLUS: Pasta ERP com asset de integração com o Rich Presence do Discord
+ERP/
+*.erp
