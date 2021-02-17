@@ -31,5 +31,8 @@ public class CharController_MovementManager : MonoBehaviour
             _agent.enabled = true;
             // _pointNClick.Invoke("Update()",0.01f);
         }
+        
+        //TODO
+        //Chamar uma funcao de movimento do script de PointNClick assim que ele for ativado
     }
 }
