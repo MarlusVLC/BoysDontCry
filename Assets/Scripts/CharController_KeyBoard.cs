@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class CharController : MonoBehaviour
+public class CharController_KeyBoard : MonoBehaviour
 {
     
     [SerializeField] float moveSpeed = 4f;
