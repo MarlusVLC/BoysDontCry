@@ -218,9 +218,7 @@ GameObject:
   - component: {fileID: 67103721}
   - component: {fileID: 67103720}
   - component: {fileID: 67103725}
-  - component: {fileID: 67103726}
-  - component: {fileID: 67103727}
-  - component: {fileID: 67103728}
+  - component: {fileID: 67103729}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -341,7 +339,7 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &67103726
+--- !u!114 &67103729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -350,36 +348,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 67103719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f75599475e169140b7e9175e4de4e52, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a8b5028d48144e992792ffa784b576f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &67103727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67103719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b747593ffc7629548ae448fb20410e29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 4
-  smoothTurn: 1
+  cam: {fileID: 64847593}
+  moveSpeed: 0.1
+  smoothTurn: 0
   turnSmoothing: 0.1
---- !u!114 &67103728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 67103719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e26bb043fa64c9db29ff98804aab417, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  agentNormalSpeed: 6
+  agentBoostSpeed: 12
 --- !u!1 &311832126
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,14 +621,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521536164}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 311832127}
   - {fileID: 1403027637}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1711057574}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &600089533
 PrefabInstance:
@@ -1133,7 +1110,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 521536165}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

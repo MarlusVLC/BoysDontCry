@@ -55,11 +55,6 @@ public class CharController_KeyBoard : MonoBehaviour
             transform.forward = heading;
         }
 
-        // Vector3 heading = Vector3.Normalize(rightMovement + forwardMovement);
-
-        // transform.forward = heading;
-        // transform.forward = Vector3.Lerp(transform.forward, heading, turnSmoothing);
-        
         transform.position += rightMovement;
         transform.position += forwardMovement;
 

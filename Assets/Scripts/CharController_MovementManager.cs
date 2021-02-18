@@ -8,12 +8,13 @@ public class CharController_MovementManager : MonoBehaviour
     private CharController_KeyBoard _keyBoard;
     private CharController_PointNClick _pointNClick;
     private NavMeshAgent _agent;
-
+    
     private void Start()
     {
         _keyBoard = GetComponent<CharController_KeyBoard>();
         _pointNClick = GetComponent<CharController_PointNClick>();
         _agent = GetComponent<NavMeshAgent>();
+
     }
 
     private void Update()
@@ -33,6 +34,9 @@ public class CharController_MovementManager : MonoBehaviour
         }
         
         //TODO
-        //Chamar uma funcao de movimento do script de PointNClick assim que ele for ativado
+        //Chamar uma funcao de movimento do scripst de PointNClick assim que ele for ativado
+        
     }
+    
+    
 }
