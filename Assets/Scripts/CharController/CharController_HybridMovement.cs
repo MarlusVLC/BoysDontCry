@@ -8,7 +8,7 @@ public class CharController_HybridMovement : MonoBehaviour
     [SerializeField] private Camera cam;
     [Space]
     [Header("Keyboard Movement")]
-    [SerializeField] private float moveSpeed = 4f;
+    [SerializeField] [Range(0, 2)] private float moveSpeed;
     [SerializeField] private bool smoothTurn;
     [SerializeField] [Range(0, 1)] private float turnSmoothing = 0.1f;
     [Space]
@@ -51,7 +51,6 @@ public class CharController_HybridMovement : MonoBehaviour
                 _agent.SetDestination(hit.point);
 
                 if (Vector3.Distance(_currDestination,_agent.destination) < 0.5f)
-                    // && Math.Truncate(_agent.speed) == Math.Truncate(agentNormalSpeed))
                 {
                     if (Math.Truncate(_agent.speed) == Math.Truncate(agentNormalSpeed))
                         _agent.speed = agentBoostSpeed;
@@ -81,13 +80,13 @@ public class CharController_HybridMovement : MonoBehaviour
         {
             _agent.speed = agentNormalSpeed;
             _agent.enabled = false;
-            Move();
+            KeyboardMove();
         }
     }
     
     
     
-    private void Move()
+    private void KeyboardMove()
     {
         Vector3 rightMovement, forwardMovement, heading;
         if (smoothTurn)
