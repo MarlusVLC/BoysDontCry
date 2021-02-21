@@ -53,11 +53,11 @@ public class CharController_HybridMovement : MonoBehaviour
                 if (Vector3.Distance(_currDestination,_agent.destination) < 0.5f)
                 {
                     if (Math.Truncate(_agent.speed) == Math.Truncate(agentNormalSpeed))
-                        _agent.speed = agentBoostSpeed;
+                        SetAgentStats(agentBoostSpeed);
                 }
                 else
                 {
-                    _agent.speed = agentNormalSpeed;
+                    SetAgentStats(agentNormalSpeed);
                 }
 
                 _currDestination = _agent.destination;
@@ -68,7 +68,7 @@ public class CharController_HybridMovement : MonoBehaviour
         {
             if (_agent.isStopped)
             {
-                _agent.speed = agentNormalSpeed;
+                SetAgentStats(agentNormalSpeed);
             }  
         }
 
@@ -78,7 +78,7 @@ public class CharController_HybridMovement : MonoBehaviour
     {
         if (Input.GetButton("IsoHorizontal") || Input.GetButton("IsoVertical"))
         {
-            _agent.speed = agentNormalSpeed;
+            SetAgentStats(agentNormalSpeed);
             _agent.enabled = false;
             KeyboardMove();
         }
@@ -125,5 +125,13 @@ public class CharController_HybridMovement : MonoBehaviour
     //     if (_agent.hasPath)
     //         _agent.speed *= 2;
     // }
+
+    private void SetAgentStats(float speed)
+    {
+        _agent.speed = speed;
+        _agent.acceleration = speed;
+        
+            
+    }
     
 }

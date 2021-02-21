@@ -1,7 +1,14 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.AI;
 
-
-public static class MiscExtensions   
-{
-        
-}
+// namespace DefaultNamespace
+// {
+//     public static class MiscExtensions
+//     {
+//         public static void SetAgentStats(in this NavMeshAgent agent)
+//             {
+//                 
+//             }
+//     }
+// }
