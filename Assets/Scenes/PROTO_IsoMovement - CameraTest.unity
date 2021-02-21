@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64847590}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.989345, y: 4.1566787, z: -6.140433}
+  m_LocalPosition: {x: -3.3234034, y: 3.3237076, z: -7.5831804}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 756422157}
@@ -988,7 +988,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756422155}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.6659417, y: -0.8329711, z: -1.4427476}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1424888637}
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_ConfineMode: 1
   m_BoundingVolume: {fileID: 746581406}
   m_BoundingShape2D: {fileID: 0}
-  m_ConfineScreenEdges: 1
+  m_ConfineScreenEdges: 0
   m_Damping: 0
 --- !u!4 &882107053 stripped
 Transform:
